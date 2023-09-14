@@ -23,12 +23,22 @@ def clear():
     else:
         _ = system("clear")
 
+
+def get_api_token():
+    api_token = environ.get("X-Finnhub-Token")
+    if api_token is None:
+        print("ERROR: Please set your API token in your environment variables as X-Finnhub-Token")
+        exit(1)
+
+    return api_token
+
 def get_stock_quotes(tickers):
     stock_dict = {}
     base_url = "https://api.finnhub.io/api/v1"
     endpoint = "/quote?symbol="
     # Fetch API token from user environment variable
-    api_token = environ.get("X-Finnhub-Token")
+    api_token = get_api_token()
+
     for ticker in tickers:
         req = Request(base_url + endpoint + ticker)
         req.add_header("X-Finnhub-Token", api_token)
