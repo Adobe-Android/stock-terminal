@@ -73,7 +73,7 @@ def setup():
     # Limit to a maximum of 30 tickers due to rate limiting.
     # If your limit is exceeded, you will receive a response with status code 429.
     # On top of all plan's limit, there is a 30 API calls/ second limit.
-    # See https://finnhub.io/docs/api/introduction
+    # See https://finnhub.io/docs/api/rate-limit
 
     tickers = []
 
