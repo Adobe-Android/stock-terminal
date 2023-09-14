@@ -36,7 +36,7 @@ Activate the virtual environment using the appropriate files for our environment
 
 Bash (macOS, Linux, or other Unix)
 ```bash
-source env/bin/activate
+source bin/activate
 ```
 
 PowerShell (Windows)
