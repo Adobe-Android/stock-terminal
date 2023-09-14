@@ -12,6 +12,9 @@ from rich.panel import Panel
 from os import system, name, environ
 from datetime import datetime
 
+from dotenv import load_dotenv
+load_dotenv()
+
 # Used by the sleep timer to determine API call frequency
 refresh_cycle = 60
 
@@ -24,7 +27,7 @@ def clear():
         _ = system("clear")
 
 def get_api_token():
-    api_token = environ.get("X-Finnhub-Token")
+    api_token = environ.get("X_Finnhub_Token")
     if api_token is None:
         print("ERROR: Please set your API token in your environment variables as X-Finnhub-Token")
         exit(1)
