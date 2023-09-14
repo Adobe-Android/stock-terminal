@@ -23,7 +23,6 @@ def clear():
     else:
         _ = system("clear")
 
-
 def get_api_token():
     api_token = environ.get("X-Finnhub-Token")
     if api_token is None:
