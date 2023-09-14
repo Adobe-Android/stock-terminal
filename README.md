@@ -55,6 +55,15 @@ Command Prompt (Windows)
 python -m pip install -r requirements.txt
 ```
 
+### Setup finnhub.io API Token
+
+Go login/signup on the [finnhub.io dashboard](https://finnhub.io/dashboard) and get yourself an API token.
+Then create a .env file at the root of the project with the following:
+```
+export X_Finnhub_Token=YOUR_API_TOKEN_HERE
+```
+
+
 ### Run
 
 ```
