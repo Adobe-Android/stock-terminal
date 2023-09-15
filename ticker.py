@@ -29,7 +29,7 @@ def clear():
 def get_api_token():
     api_token = environ.get("X_Finnhub_Token")
     if api_token is None:
-        print("ERROR: Please set your API token in your environment variables as X-Finnhub-Token")
+        print("ERROR: Please set your API token in your environment variables as X_Finnhub_Token")
         exit(1)
 
     return api_token
