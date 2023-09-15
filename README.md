@@ -70,6 +70,10 @@ export X_Finnhub_Token=YOUR_API_TOKEN_HERE
 python -m ticker.py
 ```
 
+### Example
+
+![Stock Ticker UI](screenshots/stock_ticker.png)
+
 Congratulations! You've reached the end of the instructions.
 
 ### Additional Notes
